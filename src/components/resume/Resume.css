@@ -1,0 +1,17 @@
+.resume {
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.resume:hover {
+    background-color: #020202;
+}
+
+.border-designColor {
+    border-color: 
+}
+
+.rounded-lg {
+    border-radius: 8px;
+}

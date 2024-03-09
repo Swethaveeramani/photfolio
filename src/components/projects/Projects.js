@@ -13,7 +13,7 @@ const Projects = () => {
         >
             <div className='flex justify-center items-center text-center mb-36'>
                 <Title
-                    title='VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK'
+                    
                     description='My Projects'
                 />
             </div>

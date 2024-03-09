@@ -1,0 +1,23 @@
+.bannerIcon {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .bannerIcon span {
+    position: absolute;
+    bottom: -20px; /* Adjust this value to change the distance between the icon and text */
+    left: 50%;
+    top:30%;
+    transform: translateX(-50%);
+    color: #171616;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .bannerIcon:hover span {
+    opacity: 1;
+  }
+  

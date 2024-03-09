@@ -1,4 +1,5 @@
 import React from 'react';
+import './Banner.css';
 import {
     FaGithub,
     FaLinkedinIn,
@@ -12,7 +13,7 @@ import { Cursor, useTypewriter } from 'react-simple-typewriter';
 
 const Stackinfo = () => {
     const [text] = useTypewriter({
-        words: [ 'Full Stack Developer.', 'UI/UX Designer.'],
+        words: ['Full Stack Developer.', 'UI/UX Designer.'],
         loop: true,
         typeSpeed: 10,
         deleteSpeed: 10,
@@ -22,13 +23,13 @@ const Stackinfo = () => {
         <div className='w-1/2 flex flex-col gap-20'>
             <div className='flex flex-col gap-5'>
                 <h4 className='text-lg font-normal'>WELCOME TO MY WORLD</h4>
-                <h1 className='text-6xl font-bold text-white'>
+                <h1 className='text-6xl font-bold text-black'>
                     Hi I'm {''}
                     <span className='text-designColor capitalize'>
                         Swetha Veeramani
                     </span>
                 </h1>
-                <h2 className='text-4xl font-bold text-white'>
+                <h2 className='text-4xl font-bold text-black'>
                     a<span> {text}</span>
                     <Cursor
                         cursorBlinking='true'
@@ -38,7 +39,7 @@ const Stackinfo = () => {
                 </h2>
 
                 <p className='text-base font-bodyFont leading-6 tracking-wide'>
-                As an aspiring full-stack developer and skilled UI/UX designer, I am eager to contribute my technical expertise to a challenging work environment. With a passion for continuous learning, I am ready to leverage my engineering background and dedication to enhance the innovation and success of your team.
+                    As an aspiring full-stack developer and skilled UI/UX designer, I am eager to contribute my technical expertise to a challenging work environment. With a passion for continuous learning, I am ready to leverage my engineering background and dedication to enhance the innovation and success of your team.
                 </p>
             </div>
             <div className='flex justify-between'>
@@ -47,49 +48,37 @@ const Stackinfo = () => {
                         Find me in
                     </h2>
                     <div className='flex gap-4'>
-                        <span className='bannerIcon'>
+                        <div className='bannerIcon'>
                             <a
                                 href='https://github.com/Swethaveeramani'
-                                target='_blank'
-                                className='bannerIcon'
-                                rel='noreferrer'
+                            
                             >
                                 <FaGithub />
+                                <span><br/><br/>Github</span>
                             </a>
-                        </span>
-                        <span className='bannerIcon'>
+                        </div>
+                        <div className='bannerIcon'>
                             <a
-                                className='bannerIcon'
-                                href='https://twitter.com/Srinath799'
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <FaTwitter />
-                            </a>
-                        </span>
-                        <span className='bannerIcon'>
-                        <a
-                                className='bannerIcon'
+                                
                                 href='https://www.linkedin.com/in/swetha-v-b705a9244/'
                                 target='_blank'
                                 rel='noreferrer'
                             >
                                 <FaLinkedinIn />
+                                <span><br/><br/>LinkedIn</span>
                             </a>
-                            
-                        </span>
-                        <span className='bannerIcon'>
-                        <a
-                                className='bannerIcon'
+                        </div>
+                        <div className='bannerIcon'>
+                            <a
+                                
                                 href='https://www.hackerrank.com/profile/swethav_21it'
                                 target='_blank'
                                 rel='noreferrer'
                             >
                                 <FaHackerrank />
+                                <span><br/><br/>Hackerrank</span>
                             </a>
-                            
-                        </span>
-                        
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -97,18 +86,23 @@ const Stackinfo = () => {
                         BEST SKILL ON
                     </h2>
                     <div className='flex gap-4'>
-                        <span className='bannerIcon'>
+                        <div className='bannerIcon'>
                             <FaHtml5 />
-                        </span>
-                        <span className='bannerIcon'>
+                            
+                            <span><br/><br/>HTML</span>
+                        </div>
+                        <div className='bannerIcon'>
                             <FaReact />
-                        </span>
-                        <span className='bannerIcon'>
+                            <span><br/><br/>React</span>
+                        </div>
+                        <div className='bannerIcon'>
                             <SiTailwindcss />
-                        </span>
-                        <span className='bannerIcon'>
+                            <span><br/><br/>Tailwind</span>
+                        </div>
+                        <div className='bannerIcon'>
                             <SiFigma />
-                        </span>
+                            <span><br/><br/>Figma</span>
+                        </div>
                     </div>
                 </div>
             </div>

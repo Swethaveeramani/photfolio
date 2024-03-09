@@ -6,7 +6,7 @@ const Title = ({ title, description }) => {
             <h3 className='text-sm uppercase font-light text-designColor tracking-wide'>
                 {title}
             </h3>
-            <h1 className='text-5xl text-gray-300 font-bold capitalize '>
+            <h1 className='text-5xl text-black-300 font-bold capitalize '>
                 {description}
             </h1>
         </div>
